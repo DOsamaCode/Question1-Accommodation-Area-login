@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fb;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: white;
+  height: 100vh;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.circle-image {
+    width: 40px;
+    height: 40px;         /* Set height (same as width for perfect circle) */
+    border-radius: 50%;     /* Makes it circular */
+    overflow: hidden;       /* Ensures image stays inside the circle */
+    border: 3px solid #1F4EA1; /* Optional border */
+
+}
+
+/* Make image fill the container */
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the circle without distortion */
+}
+.menu div {
+  padding: 12px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Container for image and circle */
+
+
+.menu div:hover {
+  background: #eef3ff;
+  color: #1F4EA1;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Top bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Banner */
+.banner {
+  background: #2f5fa7;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* Modules */
+.module-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.module-card {
+  background: red;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+/* Calendar */
+.calendar {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+/*remove undar line link*/
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0); /* Optional: set link color */
+        }
+
+        /* Optional: remove underline for visited, hover, and active states */
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
